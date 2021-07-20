@@ -1,0 +1,293 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5C247B5E-A581-46DF-825F-C59D2E27C174}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>SPORT_PG</RootNamespace>
+    <AssemblyName>SPORT PG</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Mayor-Gym-icon_30305.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.4">
+      <HintPath>..\..\..\..\Downloads\Bunifu_UI_v1.4.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form3.Designer.cs">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form4.Designer.cs">
+      <DependentUpon>Form4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form5.Designer.cs">
+      <DependentUpon>Form5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form6.Designer.cs">
+      <DependentUpon>Form6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form7.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form7.Designer.cs">
+      <DependentUpon>Form7.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GNR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GNR.Designer.cs">
+      <DependentUpon>GNR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KongFu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KongFu.Designer.cs">
+      <DependentUpon>KongFu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PassW.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PassW.Designer.cs">
+      <DependentUpon>PassW.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form3.resx">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form4.resx">
+      <DependentUpon>Form4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form5.resx">
+      <DependentUpon>Form5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form6.resx">
+      <DependentUpon>Form6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form7.resx">
+      <DependentUpon>Form7.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GNR.resx">
+      <DependentUpon>GNR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KongFu.resx">
+      <DependentUpon>KongFu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PassW.resx">
+      <DependentUpon>PassW.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PhotoPR.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit-512.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\administrator-512.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\walid .jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yellow.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-left-512.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yellow2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\projetSP.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\settings-24-512.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimize-window-512.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\happy-512.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\emoticon-45-512.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\emoticon-3-512.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\emoticon-6-512.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\emoticon-512 %281%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kong1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\view-details-512.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-70-512.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-97-512.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-32-512.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-45-512.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mus.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\katate.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kik.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ty.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Jud.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit-5121.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-87-512.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add-list-512.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimize-window-512 %281%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-45-512 %281%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-70-512 %281%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-97-512 %281%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-32-512 %281%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-83-512.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Icons8-Windows-8-Sports-Running-Man.ico" />
+    <Content Include="Mayor-Gym-icon_30305.ico" />
+    <None Include="Resources\Mayor-Gym-icon_30305.ico" />
+    <None Include="Resources\x-mark-5-512.ico" />
+    <None Include="Resources\x-mark-512.ico" />
+    <None Include="Resources\padlock-10-512.ico" />
+    <None Include="Resources\banknotes-512.ico" />
+    <None Include="Resources\money-2-512.ico" />
+    <None Include="Resources\2016.09.23-CZ-Thumbnail-1-1.jpg" />
+    <None Include="Resources\time-5-512.ico" />
+    <None Include="Resources\list-ingredients-512.ico" />
+    <None Include="Resources\us-dollar-512.ico" />
+    <None Include="Resources\money tof.jpg" />
+    <None Include="Resources\icones-01_0.png" />
+    <None Include="Resources\house-512.ico" />
+    <Content Include="watchos4_workout_indoor_outdoor_run_icon_J6G_icon.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
